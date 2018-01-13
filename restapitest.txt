@@ -1,0 +1,6 @@
+curl http://localhost:8080/api/customers -v -X GET
+curl http://localhost:8080/api/customers/1 -v -X GET
+curl http://localhost:8080/api/customers/10 -v -X GET
+curl http://localhost:8080/api/customers -v -X POST -H "Content-Type: application/json" -d "{\"firstName\" : \"Tamako\", \"lastName\" : \"Nobi\"}"
+curl http://localhost:8080/api/customers/1 -v -X PUT -H "Content-Type: application/json" -d "{\"firstName\" : \"Hello\", \"lastName\" : \"World\"}"
+curl http://localhost:8080/api/customers/1 -v -X DELETE
